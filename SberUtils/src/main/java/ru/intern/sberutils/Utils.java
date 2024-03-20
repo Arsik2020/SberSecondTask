@@ -7,7 +7,7 @@ public class Utils {
     public static boolean validate(String[] args) {
         try {
             File file = new File(args[0]);
-            return file.canRead() && file.isFile();
+            return  file.isFile() && file.canRead() ;
         } catch (Exception e) {
             e.printStackTrace();
             return false;
